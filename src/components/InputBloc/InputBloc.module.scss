@@ -1,0 +1,99 @@
+.inpBloc {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 1067px;
+  height: 400px;
+  padding: 60px 152px 60px 135px;
+  margin: 50px auto 0 auto;
+  background: #b9c1ed;
+  border-radius: 30px;
+}
+.inpBlocInp {
+  display: flex;
+  column-gap: 190px;
+  justify-content: center;
+  align-items: center;
+  width: 780px;
+  height: 70px;
+  background: #ffffff;
+  border-radius: 30px;
+}
+.inpBlocInpInput {
+  background: none;
+  font-size: 40px;
+  color: dodgerblue;
+}
+.inpBlocText {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 49px;
+  cursor: pointer;
+}
+.text1 {
+  color: #00ff47;
+  @extend .inpBlocText;
+}
+.text2 {
+  color: #0038ff;
+  @extend .inpBlocText;
+}
+.optionInp1 {
+  z-index: 1;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 0px;
+  top: 0;
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  background: #5b5b5b;
+  border-radius: 30px;
+  left: 915px;
+  overflow: scroll;
+}
+.optionInpVal {
+  cursor: pointer;
+  padding-bottom: 10px;
+  color: #ffffff;
+  width: 100%;
+  font-size: 20px;
+  border-bottom: 2px solid #000;
+}
+.activeOptionInpVal {
+  @extend .optionInpVal;
+  color: #00ff47;
+}
+.absoluteArrow {
+  position: absolute;
+  top: 170px;
+  right: 180px;
+  font-size: 50px;
+  transform: rotate(90deg);
+  color: #0038ff;
+
+  &:hover {
+    color: aliceblue;
+  }
+}
+.absButton {
+  position: absolute;
+  right: 70px;
+  top: 170px;
+  background: none;
+}
+.absoluteRevers {
+  font-size: 50px;
+
+  transition: transform 1s ease-in;
+  color: #ffffff;
+  cursor: pointer;
+  &:hover {
+    transform: rotate(180deg);
+    color: cyan;
+  }
+}
